@@ -11,7 +11,7 @@ class Salting
 {
 
 	// endode string
-	public function encodeSalted($string)
+	public static function encodeSalted($string)
 	{
 		$prefixStart = 'laravel-salt-rand_start';
 		$prefixEnd = 'laravel-salt-rand_end';
@@ -22,7 +22,7 @@ class Salting
 
 
 	// decode string
-	public function decodeSalted($string)
+	public static function decodeSalted($string)
 	{
 		$stringArray = explode('laravel-salt-rand_start', $string);
 		return $stringArray[0];
@@ -31,7 +31,7 @@ class Salting
 	// genrate random string
 	private static function rand_str($length)
 	{
-		$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+-*-/(*^&*%^(*&(&%^%&^"|}{":"|';
 		$charactersLength = strlen($characters);
 		$randomString = '';
 		for ($i = 0; $i < $length; $i++) {
