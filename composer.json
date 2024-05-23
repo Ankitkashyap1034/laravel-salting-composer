@@ -1,0 +1,22 @@
+{
+    "name": "ankit04/laravel-salting",
+    "description": "This is a package for Laravel to secure your crucial information that needs to be stored. It prevents cyber attacks like brute force attacks. Secure your information using this package.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ankit04\\Salting\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ankit Kumar",
+            "email": "ankitkumar103466@gmail.com",
+            "homepage": "https://akintellitech.shopinfinex.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
